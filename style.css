@@ -1,0 +1,45 @@
+/*Центровка, флекс-контейнер,шрифт, высота тела,цвет фона*/
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d5d3c6;
+}
+/*Цвет фона,внутренние отступы сторон, скругление углов,тени*/
+.calculator {
+    background-color: rgb(193, 218, 248);
+    padding: 30px;
+    border-radius: 23px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*Ширина элемента, высота поля ввода, размер шрифта, выравнивание
+ текста по правому краю, отступы снизу*/
+input {
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 25px;
+}
+/*Грид-контейнер для кнопок, колонки в гриде, промежуток между грида*/
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+/*Фиксирующая высота кнопок, размер шрифта кнопок*/
+button {
+    height: 40px;
+    font-size: 20px;
+}
+/*Отступ сверху блока, ограничитель истории, прокрутка вертикальная,
+разделитель с толщиной, внутрение отступы верхней части*/
+.history {
+    margin-top: 10px;
+    max-height: 200px; /* Ограничение высоты */
+    overflow-y: auto; /* Прокрутка при переполнении */
+    border-top: 1px solid #ccc; /* Разделитель */
+    padding-top: 20px; /* Отступ сверху */
+}
